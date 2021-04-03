@@ -1,9 +1,6 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    info.changeLifeBy(-1)
-    Wolf.setPosition(randint(0, 160), randint(100, 120))
-    info.startCountdown(5)
+	
 })
-let Wolf: Sprite = null
 scene.setBackgroundColor(7)
 scene.setBackgroundImage(img`
     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
@@ -146,7 +143,7 @@ let Bear = sprites.create(img`
     . . f f f f f f f f f f f f f . 
     `, SpriteKind.Player)
 controller.moveSprite(Bear)
-Wolf = sprites.create(img`
+let Wolf = sprites.create(img`
     . . 4 4 4 . . . . 4 4 4 . . . . 
     . 4 5 5 5 e . . e 5 5 5 4 . . . 
     4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
@@ -162,3 +159,12 @@ Wolf = sprites.create(img`
     . . . f 5 f f f 5 f f 5 f . . . 
     . . . f f . . f f . . f f . . . 
     `, SpriteKind.Enemy)
+Wolf.setPosition(24, 95)
+info.setLife(1)
+forever(function () {
+    if (Bear.x > Wolf.x) {
+        Wolf.x += 1
+    } else {
+        Wolf.x += -1
+    }
+})
