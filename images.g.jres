@@ -1,0 +1,9 @@
+{
+    "image1": "hwQQABAAAAAAAAAAAAAAAAAgIiIiIiIAACL/////IwAAMv///z//AiAy8///8/8CIP8z/z///wIg/z/z8///AiDy/z////8CAPL/8zP//wIg8j//P///AiD/8///M/8CID/z//8/8wIgM/////8jAiAi////LyIAACAiIiIiAAAAAAAAAAAAAA==",
+    "image2": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIgIAAAAAICIiAgAAACAiACAiAAAAIgIAACACACAiAAAAIAIAIAIAAAAgAgAiAgAAACACACICAAAAIgAAIiIAACAiAAAgIgIAIgIAAAAiIiICAAAAACAiAgAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
